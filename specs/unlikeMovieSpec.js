@@ -24,7 +24,7 @@ describe('Unliking A Movie', () => {
   it('should not display like widget when the movie has been liked', async () => {
     await TestFactories.createLikeButtonPresenterWithMovie({ id: 1 });
 
-    expect(document.querySelector('[aria-label="like this movie"]')).toBeFalsy();
+    expect(document.querySelector('[aria-label="unlike this movie"]')).toBeFalsy();
   });
 
   it('should be able to remove liked movie from the list', async () => {
